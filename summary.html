@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedancemo</title>
+
+    <script data-search-pseudo-elements defer src="https://kit.fontawesome.com/268ed44edb.js" crossorigin="anonymous"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+      <section class="">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-lg-3 col-xl-2 pt-lg-3 admin-left-column">
+                    <div class="sidebar-nav">
+                        <div class="row pt-2 pt-lg-4 pb-2 pb-lg-2">
+                            <div class="col-6 col-lg-12 d-flex d-lg-block align-items-center">
+                                <a class="navbar-brand d-flex d-lg-block mb-0 mb-lg-4" href="#">
+                                  <img src="img/wedancemo_logo.svg" alt="Logo" class="d-inline-block align-text-top">
+                                  <span class="d-flex align-items-center d-lg-block mt-1 mt-lg-3 ms-2 ms-lg-0">
+                                    Wedancemo
+                                  </span>
+                                </a>
+                            </div>
+                            <div class="col-6 col-lg-12 d-flex justify-content-end d-lg-none align-items-center">
+                                <div class="hamburger" onclick="hamburgerToggle(this)">
+                                    <div class="bar-line bar1"></div>
+                                    <div class="bar-line bar2"></div>
+                                    <div class="bar-line bar3"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul>
+                            <li>
+                                <a href="index.html">
+                                    <span class="fa-stack fa-1x">
+                                        <i class="fa-solid fa-circle fa-stack-2x"></i>
+                                        <i class="fa-solid fa-gauge-high fa-stack-1x fa-inverse"></i>
+                                    </span> <span class="title">Overview</span> 
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="active">
+                                    <span class="fa-stack fa-1x">
+                                        <i class="fa-solid fa-circle fa-stack-2x"></i>
+                                        <i class="fa-regular fa-calendar-days fa-stack-1x fa-inverse"></i>
+                                    </span> <span class="title">Events</span> 
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="fa-stack fa-1x">
+                                        <i class="fa-solid fa-circle fa-stack-2x"></i>
+                                        <i class="fa-regular fa-receipt fa-stack-1x fa-inverse"></i>
+                                    </span> <span class="title">Orders</span> 
+                                    
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="fa-stack fa-1x">
+                                        <i class="fa-solid fa-circle fa-stack-2x"></i>
+                                        <i class="fa-solid fa-chart-line fa-stack-1x fa-inverse"></i>
+                                    </span> <span class="title">Reports</span> 
+                                    
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="fa-stack fa-1x">
+                                        <i class="fa-solid fa-circle fa-stack-2x"></i>
+                                        <i class="fa-solid fa-building-columns fa-stack-1x fa-inverse"></i>
+                                    </span> <span class="title">Finance</span> 
+                                    
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="fa-stack fa-1x">
+                                        <i class="fa-solid fa-circle fa-stack-2x"></i>
+                                        <i class="fa-duotone fa-gear fa-stack-1x fa-inverse"></i>
+                                    </span> <span class="title">Setting</span> 
+                                    
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-lg-9 col-xl-8">
+
+                        <div class="row">
+                            <div class="col-12 col-lg-4 col-xxl-3 event-sidebar-nav">
+
+                                
+                                <div class="row pt-2 pt-lg-1 pb-2 pb-lg-2">
+                                    <div class="col-10 col-lg-12 d-flex d-lg-block align-items-center">
+                                        <span class="d-none d-lg-inline-block">
+                                            Event Name: 
+                                        </span>
+                                        <p class="event-title">
+                                            Sensual Movement's 7th Year Anniversary
+                                        </p>
+                                    </div>
+                                    <div class="col-2 col-lg-12 d-flex justify-content-end d-lg-none align-items-center">
+                                        <div class="eventMenu" onclick="eventMenuToggle(this)">
+                                            <i class="fa-solid fa-grid-2"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                
+                                <div class="accordion accordion-flush accordion-menu" id="accordionPanelsStayOpenExample">
+                                    <a href="ticket-home.html" class="link">
+                                        <span class="fa-stack fa-1x">
+                                            <i class="fa-solid fa-circle fa-stack-2x"></i>
+                                            <i class="fa-solid fa-house-heart fa-stack-1x fa-inverse"></i>
+                                        </span> <span class="title">Home</span> 
+                                    </a>
+
+
+                                    
+
+
+
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                          Event Details
+                                        </button>
+                                      </h2>
+                                      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                                        <div class="accordion-body">
+                                           <ul class="sub-menu">
+                                            <li>
+                                                <a href="event-info.html">
+                                                    <span class="fa-stack fa-1x">
+                                                        <i class="fa-solid fa-circle fa-stack-2x"></i>
+                                                        <i class="fa-solid fa-circle-info fa-stack-1x fa-inverse"></i>
+                                                    </span> <span class="title">Event Info</span> 
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="summary.html" class="active">
+                                                    <span class="fa-stack fa-1x">
+                                                        <i class="fa-solid fa-circle fa-stack-2x"></i>
+                                                        <i class="fa-solid fa-memo-pad fa-stack-1x fa-inverse"></i>
+                                                    </span> <span class="title">Summary</span> 
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="tickets.html">
+                                                    <span class="fa-stack fa-1x">
+                                                        <i class="fa-solid fa-circle fa-stack-2x"></i>
+                                                        <i class="fa-solid fa-ticket fa-stack-1x fa-inverse"></i>
+                                                    </span> <span class="title">Tickets</span> 
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="ticket-publish.html">
+                                                    <span class="fa-stack fa-1x">
+                                                        <i class="fa-solid fa-circle fa-stack-2x"></i>
+                                                        <i class="fa-solid fa-rocket-launch fa-stack-1x fa-inverse"></i>
+                                                    </span> <span class="title">Publish</span> 
+                                                </a>
+                                            </li>
+                                           </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+
+
+
+
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                                              Attendees
+                                          </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                                          <div class="accordion-body">
+                                              <ul class="sub-menu">
+                                               <li>
+                                                   <a href="orders.html">
+                                                      <span class="fa-stack fa-1x">
+                                                          <i class="fa-solid fa-circle fa-stack-2x"></i>
+                                                          <i class="fa-regular fa-receipt fa-stack-1x fa-inverse"></i>
+                                                      </span> <span class="title">Orders</span> 
+                                                   </a>
+                                               </li>
+                                               <li>
+                                                   <a href="add-attendees.html">
+                                                       <span class="fa-stack fa-1x">
+                                                           <i class="fa-solid fa-circle fa-stack-2x"></i>
+                                                           <i class="fa-solid fa-user-plus fa-stack-1x fa-inverse"></i>
+                                                       </span> <span class="title">Add Attendees</span> 
+                                                   </a>
+                                               </li>
+                                               <li>
+                                                   <a href="email-reminders.html">
+                                                       <span class="fa-stack fa-1x">
+                                                           <i class="fa-solid fa-circle fa-stack-2x"></i>
+                                                           <i class="fa-solid fa-envelopes fa-stack-1x fa-inverse"></i>
+                                                       </span> <span class="title">Email Reminders</span> 
+                                                   </a>
+                                               </li>
+                                               <li>
+                                                   <a href="attendee-list.html">
+                                                       <span class="fa-stack fa-1x">
+                                                           <i class="fa-solid fa-circle fa-stack-2x"></i>
+                                                           <i class="fa-solid fa-list-check fa-stack-1x fa-inverse"></i>
+                                                       </span> <span class="title">Attendee List</span> 
+                                                   </a>
+                                               </li>
+                                               <li>
+                                                   <a href="check-in-list.html">
+                                                       <span class="fa-stack fa-1x">
+                                                           <i class="fa-solid fa-circle fa-stack-2x"></i>
+                                                           <i class="fak fa-solid-file-invoice-circle-check fa-stack-1x fa-inverse"></i>
+                                                       </span> <span class="title">Check In</span> 
+                                                   </a>
+                                               </li>
+                                              </ul>
+                                           </div>
+                                        </div>
+                                      </div>
+
+
+
+
+
+
+
+
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                          Order Options
+                                        </button>
+                                      </h2>
+                                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                                        <div class="accordion-body">
+                                            <ul class="sub-menu">
+                                                <li>
+                                                    <a href="event-schedule.html">
+                                                        <span class="fa-stack fa-1x">
+                                                            <i class="fa-solid fa-circle fa-stack-2x"></i>
+                                                            <i class="fa-solid fa-list-timeline fa-stack-1x fa-inverse"></i>
+                                                        </span> <span class="title">Event Schedule</span> 
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="checkout-form.html">
+                                                        <span class="fa-stack fa-1x">
+                                                            <i class="fa-solid fa-circle fa-stack-2x"></i>
+                                                            <i class="fa-solid fa-file-invoice fa-stack-1x fa-inverse"></i>
+                                                        </span> <span class="title">Checkout Form</span> 
+                                                    </a>
+                                                </li>
+                                             <li>
+                                                 <a href="ticket-transfer.html">
+                                                     <span class="fa-stack fa-1x">
+                                                         <i class="fa-solid fa-circle fa-stack-2x"></i>
+                                                         <i class="fak fa-ticket-transfer fa-stack-1x fa-inverse"></i>
+                                                     </span> <span class="title">Transfer Settings</span> 
+                                                 </a>
+                                             </li>
+                                             <li>
+                                                 <a href="waitlist.html">
+                                                     <span class="fa-stack fa-1x">
+                                                         <i class="fa-solid fa-circle fa-stack-2x"></i>
+                                                         <i class="fa-regular fa-clock fa-stack-1x fa-inverse"></i>
+                                                     </span> <span class="title">Waitlist</span> 
+                                                 </a>
+                                             </li>
+                                            </ul>
+                                         </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                          Payments & Tax
+                                        </button>
+                                      </h2>
+                                      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                                        <div class="accordion-body">
+                                            <ul class="sub-menu">
+                                                <li>
+                                                    <a href="payment-options.html">
+                                                       <span class="fa-stack fa-1x">
+                                                           <i class="fa-solid fa-circle fa-stack-2x"></i>
+                                                           <i class="fa-solid fa-calculator fa-stack-1x fa-inverse"></i>
+                                                       </span> <span class="title">Payment Options</span> 
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="payout-method.html">
+                                                       <span class="fa-stack fa-1x">
+                                                           <i class="fa-solid fa-circle fa-stack-2x"></i>
+                                                           <i class="fa-solid fa-building-columns fa-stack-1x fa-inverse"></i>
+                                                       </span> <span class="title">Payout Method</span> 
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="refund-settings.html">
+                                                       <span class="fa-stack fa-1x">
+                                                           <i class="fa-solid fa-circle fa-stack-2x"></i>
+                                                           <i class="fak fa-refund fa-stack-1x fa-inverse"></i>
+                                                       </span> <span class="title">Refund Settings</span> 
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="tax-settings.html">
+                                                       <span class="fa-stack fa-1x">
+                                                           <i class="fa-solid fa-circle fa-stack-2x"></i>
+                                                           <i class="fak fa-tax fa-stack-1x fa-inverse"></i>
+                                                       </span> <span class="title">Tax Settings</span> 
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                         </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+
+                            </div>
+                            <div class="col-12 col-lg-8 col-xxl-9 board">
+
+                                
+                            <form action="">
+                                <h2>
+                                    Event Banner
+                                </h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.
+                                </p>
+                                <div class="banner">
+                                    <div class="content">
+                                        <i class="fa-light fa-image"></i>
+                                        <div>
+                                            Drag and drop an image
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-12 col-md-12 text-center">
+                                        <button class="btn primary-btn mt-2">
+                                            Upload Image
+                                        </button>
+                                    </div>
+                                </div>  
+                                <hr>
+                                <h2>
+                                    Brief (Google Description)
+                                </h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.
+                                </p>
+                                <div class="input-block">
+                                    <label for="eventBrief" class="form-label">Brief</label>
+                                    <textarea class="form-control" id="eventBrief" rows="3"></textarea>
+                                </div> 
+                                <hr>
+                                <h2>
+                                    Description
+                                </h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.
+                                </p>
+                                <div class="input-block">
+                                    <label for="description" class="form-label">Description</label>
+                                    <textarea class="form-control" id="description" rows="5"></textarea>
+                                </div> 
+                                
+                                <div class="row mt-3">
+                                    <div class="col-12 col-md-12 text-center">
+                                        <a href="#" class="description-buttons">
+                                            <i class="fak fa-solid-text-circle-plus"></i>
+                                            <span>
+                                                Add Text
+                                            </span>
+                                        </a>
+                                        <a href="#" class="description-buttons">
+                                            <i class="fak fa-solid-image-circle-plus"></i> 
+                                            <span>
+                                                Add Image
+                                            </span>
+                                        </a>
+                                        <a href="#" class="description-buttons">
+                                            <i class="fak fa-solid-video-circle-plus"></i>
+                                            <span>
+                                                Add Video
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div> 
+                            </form>
+
+
+                            </div>
+                        </div>
+                       
+                    
+                            
+
+                </div>
+            </div>
+        </div>
+      </section>
+
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+</html>

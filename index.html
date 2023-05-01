@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedancemo</title>
+
+    <script data-search-pseudo-elements defer src="https://kit.fontawesome.com/268ed44edb.js" crossorigin="anonymous"></script>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+      <section class="">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-lg-3 col-xl-2 pt-lg-3 admin-left-column">
+                    <div class="sidebar-nav">
+                        <div class="row pt-2 pt-lg-4 pb-2 pb-lg-2">
+                            <div class="col-6 col-lg-12 d-flex d-lg-block align-items-center">
+                                <a class="navbar-brand d-flex d-lg-block mb-0 mb-lg-4" href="#">
+                                  <img src="img/wedancemo_logo.svg" alt="Logo" class="d-inline-block align-text-top">
+                                  <span class="d-flex align-items-center d-lg-block mt-1 mt-lg-3 ms-2 ms-lg-0">
+                                    Wedancemo
+                                  </span>
+                                </a>
+                            </div>
+                            <div class="col-6 col-lg-12 d-flex justify-content-end d-lg-none align-items-center">
+                                <div class="hamburger" onclick="hamburgerToggle(this)">
+                                    <div class="bar-line bar1"></div>
+                                    <div class="bar-line bar2"></div>
+                                    <div class="bar-line bar3"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul>
+                            <li>
+                                <a href="index.html" class="active">
+                                    <span class="fa-stack fa-1x">
+                                        <i class="fa-solid fa-circle fa-stack-2x"></i>
+                                        <i class="fa-solid fa-gauge-high fa-stack-1x fa-inverse"></i>
+                                    </span> <span class="title">Overview</span> 
+                                </a>
+                            </li>
+                            <li>
+                                <a href="event-info.html">
+                                    <span class="fa-stack fa-1x">
+                                        <i class="fa-solid fa-circle fa-stack-2x"></i>
+                                        <i class="fa-regular fa-calendar-days fa-stack-1x fa-inverse"></i>
+                                    </span> <span class="title">Events</span> 
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="fa-stack fa-1x">
+                                        <i class="fa-solid fa-circle fa-stack-2x"></i>
+                                        <i class="fa-regular fa-receipt fa-stack-1x fa-inverse"></i>
+                                    </span> <span class="title">Orders</span> 
+                                    
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="fa-stack fa-1x">
+                                        <i class="fa-solid fa-circle fa-stack-2x"></i>
+                                        <i class="fa-solid fa-chart-line fa-stack-1x fa-inverse"></i>
+                                    </span> <span class="title">Reports</span> 
+                                    
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="fa-stack fa-1x">
+                                        <i class="fa-solid fa-circle fa-stack-2x"></i>
+                                        <i class="fa-solid fa-building-columns fa-stack-1x fa-inverse"></i>
+                                    </span> <span class="title">Finance</span> 
+                                    
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="fa-stack fa-1x">
+                                        <i class="fa-solid fa-circle fa-stack-2x"></i>
+                                        <i class="fa-duotone fa-gear fa-stack-1x fa-inverse"></i>
+                                    </span> <span class="title">Setting</span> 
+                                    
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-lg-9 col-xl-8 board">
+
+
+
+                    <h1>
+                        Welcome, Brian
+                    </h1>
+                        <h3>Your next event is in 232 days.</h3>
+                        <br>
+                        
+                        <a href="event-info.html" class="btn primary-btn mt-2">
+                            Create Event
+                        </a>
+
+                        
+
+                        <div class="row">
+                            <div class="col-12 col-lg-4">
+                                <div class="input-block">
+                                    <label for="searchEvents" class="form-label">Search</label>
+                                    <input type="text" class="form-control" id="searchEvents" aria-describedby="Search for events" value="" placeholder="">
+                                </div> 
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <div class="dropdown input-block select" data-dropdown>
+                                    <label class="form-label" for="filterEvents">Filter Events</label>
+                                    <button class="dropdown-button" id="filterEvents" data-dropdown-button type="button">
+                                        Make a selection
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <div class="dropdown-links">
+                                            <a href="#" class="link">Social</a>
+                                            <a href="#" class="link">Congress</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="ticket-table mt-3">
+                            <div class="row heading">
+                                <div class="col-10 col-md-11">
+                                    <div class="row">
+                                        <div class="col-12 col-md-7">
+                                            Event
+                                        </div>
+                                        <div class="col-12 col-md-5 d-none d-md-block">
+                                            <div class="row">
+                                                <div class="col-12 col-md-4">
+                                                    Sold
+                                                </div>
+                                                <div class="col-12 col-md-4">
+                                                    Revenue
+                                                </div>
+                                                <div class="col-12 col-md-4">
+                                                    Status
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-2 col-md-1">
+                                   
+                                </div>
+                            </div>
+                            
+                            <div class="row event-row">
+                                <div class="col-10 col-md-11">
+                                    <div class="row">
+                                        <div class="col-12 col-md-7">
+                                            <div class="row">
+                                                <div class="col-1 col-md-1 date d-none d-md-flex">
+                                                    <span class="day">10</span>
+                                                    <span class="month">Aug</span>
+                                                </div>
+                                                <div class="col-2 col-md-2 thumbnail d-none d-md-flex">
+                                                        <img src="img/lion.jpg" alt="">
+                                                </div>
+                                                <div class="col-12 col-md-8 col-lg-9 event-info">
+                                                    <span class="heading">Sensual Movement's 7th year anniversary</span>
+                                                    <span class="location"><span class="location-name">Hyatt Regency Orlando</span> 9801 International Drive Orlando, FL 32819</span>
+                                                    <span class="full-date">Thu, Feb 16, 2023, 9:00 PM - Mon, Feb 20, 2023, 6:00 AM EST</span>
+
+
+                                                    <div class="mobile-event-block d-block d-md-none mt-3">
+                                                        <div class="info mb-3">
+                                                            <span class="heading d-block">Sold:</span>
+                                                            <span>2/5</span>
+                                                            <div class="progress" style="height: 4px;">
+                                                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Basic example" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="info mb-2">
+                                                            <span class="heading d-block">Revenue:</span>
+                                                            <span>
+                                                                $500.87
+                                                            </span>
+                                                        </div>
+                                                        <div class="info mb-0">
+                                                            <span class="heading d-block">Status:</span>
+                                                            <span>
+                                                                On Sale
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-5 align-self-center d-none d-md-block">
+                                            <div class="row">
+                                                <div class="col-12 col-md-4">
+                                                    <div class="sold-info">
+                                                        <span>2/5</span>
+                                                        <div class="progress" style="height: 4px;">
+                                                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Basic example" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-4">
+                                                    <div class="revenue-info">
+                                                        $500.87
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-4">
+                                                    <div class="status-info">
+                                                        On Sale
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-2 col-md-1 align-self-center">
+                                    <div class="dropdown justify-content-end" data-dropdown>
+                                        <a href="#a" class="dropdown-button d-inline-block" data-dropdown-button>
+                                            <span class="fa-stack fa-1x">
+                                                <i class="fa-solid fa-circle fa-stack-2x"></i>
+                                                <i class="fa-solid fa-ellipsis-vertical fa-stack-1x fa-inverse"></i>
+                                            </span>
+                                        </a>
+                                        <div class="dropdown-menu information-grid">
+                                            <div class="dropdown-links">
+                                                <a href="#" class="link">View</a>
+                                                <a href="#" class="link">Edit</a>
+                                                <a href="#" class="link">Copy URL</a>
+                                                <a href="#" class="link">Duplicate</a>
+                                                <a href="#" class="link">Delete</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row event-row">
+                                <div class="col-10 col-md-11">
+                                    <div class="row">
+                                        <div class="col-12 col-md-7">
+                                            <div class="row">
+                                                <div class="col-1 col-md-1 date d-none d-md-flex">
+                                                    <span class="day">05</span>
+                                                    <span class="month">Sept</span>
+                                                </div>
+                                                <div class="col-2 col-md-2 thumbnail d-none d-md-flex">
+                                                        <img src="img/lion.jpg" alt="">
+                                                </div>
+                                                <div class="col-12 col-md-8 col-lg-9 event-info">
+                                                    <span class="heading">Sensual Movement's 7th year anniversary</span>
+                                                    <span class="location"><span class="location-name">Hyatt Regency Orlando</span> 9801 International Drive Orlando, FL 32819</span>
+                                                    <span class="full-date">Thu, Feb 16, 2023, 9:00 PM - Mon, Feb 20, 2023, 6:00 AM EST</span>
+
+
+                                                    <div class="mobile-event-block d-block d-md-none mt-3">
+                                                        <div class="info mb-3">
+                                                            <span class="heading d-block">Sold:</span>
+                                                            <span>2/5</span>
+                                                            <div class="progress" style="height: 4px;">
+                                                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Basic example" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="info mb-2">
+                                                            <span class="heading d-block">Revenue:</span>
+                                                            <span>
+                                                                $500.87
+                                                            </span>
+                                                        </div>
+                                                        <div class="info mb-0">
+                                                            <span class="heading d-block">Status:</span>
+                                                            <span>
+                                                                On Sale
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-5 align-self-center d-none d-md-block">
+                                            <div class="row">
+                                                <div class="col-12 col-md-4">
+                                                    <div class="sold-info">
+                                                        <span>2/5</span>
+                                                        <div class="progress" style="height: 4px;">
+                                                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Basic example" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-4">
+                                                    <div class="revenue-info">
+                                                        $500.87
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-4">
+                                                    <div class="status-info">
+                                                        On Sale
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-2 col-md-1 align-self-center">
+        
+                                    <div class="dropdown justify-content-end" data-dropdown>
+                                        <a href="#a" class="dropdown-button d-inline-block" data-dropdown-button>
+                                            <span class="fa-stack fa-1x">
+                                                <i class="fa-solid fa-circle fa-stack-2x"></i>
+                                                <i class="fa-solid fa-ellipsis-vertical fa-stack-1x fa-inverse"></i>
+                                            </span>
+                                        </a>
+                                        <div class="dropdown-menu information-grid">
+                                            <div class="dropdown-links">
+                                                <a href="#" class="link">View</a>
+                                                <a href="#" class="link">Edit</a>
+                                                <a href="#" class="link">Copy URL</a>
+                                                <a href="#" class="link">Duplicate</a>
+                                                <a href="#" class="link">Delete</a>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                </div>
+                            </div>
+                            <div class="row event-row">
+                                <div class="col-10 col-md-11">
+                                    <div class="row">
+                                        <div class="col-12 col-md-7">
+                                            <div class="row">
+                                                <div class="col-1 col-md-1 date d-none d-md-flex">
+                                                    <span class="day">26</span>
+                                                    <span class="month">Nov</span>
+                                                </div>
+                                                <div class="col-2 col-md-2 thumbnail d-none d-md-flex">
+                                                        <img src="img/lion.jpg" alt="">
+                                                </div>
+                                                <div class="col-12 col-md-8 col-lg-9 event-info">
+                                                    <span class="heading">Sensual Movement's 7th year anniversary</span>
+                                                    <span class="location"><span class="location-name">Hyatt Regency Orlando</span> 9801 International Drive Orlando, FL 32819</span>
+                                                    <span class="full-date">Thu, Feb 16, 2023, 9:00 PM - Mon, Feb 20, 2023, 6:00 AM EST</span>
+
+
+                                                    <div class="mobile-event-block d-block d-md-none mt-3">
+                                                        <div class="info mb-3">
+                                                            <span class="heading d-block">Sold:</span>
+                                                            <span>2/5</span>
+                                                            <div class="progress" style="height: 4px;">
+                                                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Basic example" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="info mb-2">
+                                                            <span class="heading d-block">Revenue:</span>
+                                                            <span>
+                                                                $500.87
+                                                            </span>
+                                                        </div>
+                                                        <div class="info mb-0">
+                                                            <span class="heading d-block">Status:</span>
+                                                            <span>
+                                                                On Sale
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-5 align-self-center d-none d-md-block">
+                                            <div class="row">
+                                                <div class="col-12 col-md-4">
+                                                    <div class="sold-info">
+                                                        <span>2/5</span>
+                                                        <div class="progress" style="height: 4px;">
+                                                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Basic example" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-4">
+                                                    <div class="revenue-info">
+                                                        $500.87
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-4">
+                                                    <div class="status-info">
+                                                        On Sale
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-2 col-md-1 align-self-center">
+        
+                                    <div class="dropdown justify-content-end" data-dropdown>
+                                        <a href="#a" class="dropdown-button d-inline-block" data-dropdown-button>
+                                            <span class="fa-stack fa-1x">
+                                                <i class="fa-solid fa-circle fa-stack-2x"></i>
+                                                <i class="fa-solid fa-ellipsis-vertical fa-stack-1x fa-inverse"></i>
+                                            </span>
+                                        </a>
+                                        <div class="dropdown-menu information-grid">
+                                            <div class="dropdown-links">
+                                                <a href="#" class="link">View</a>
+                                                <a href="#" class="link">Edit</a>
+                                                <a href="#" class="link">Copy URL</a>
+                                                <a href="#" class="link">Duplicate</a>
+                                                <a href="#" class="link">Delete</a>
+                                            </div>
+                                        </div>
+        
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+      </section>
+
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+</html>
